@@ -9,7 +9,7 @@ end
 
 # returns board index from user input
 def input_to_index(input)
-  input - 1
+  input.to_i - 1
 end
 
 def move(board, index, character)
