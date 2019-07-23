@@ -101,7 +101,7 @@ def current_player(board)
   end
 end
 
-def play(board, input)
+def play(board)
   until over?(board)
     puts "Make your move!"
     turn(board)
