@@ -102,7 +102,7 @@ def current_player(board)
 end
 
 def play(board, input)
-  until won?(board)
+  until over?(board)
     puts "Make your move!"
     turn(board)
   end
