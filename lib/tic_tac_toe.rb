@@ -102,6 +102,7 @@ def current_player(board)
 end
 
 def play(board, input)
+  puts "Welcome to tic, tac, toe! (noughts and crosses)"
   until won?(board)
     turn(board)
   end
