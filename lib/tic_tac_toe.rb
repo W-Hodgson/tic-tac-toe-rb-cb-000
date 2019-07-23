@@ -96,3 +96,7 @@ def current_player(board)
     'O'
   end
 end
+
+def play(board, input)
+
+end
