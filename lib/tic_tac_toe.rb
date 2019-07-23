@@ -74,7 +74,7 @@ def turn(board)
     if current_player(board) == 'X'
       move(board, index, 'X')
     else
-      move(board, indec, 'O')
+      move(board, index, 'O')
     end
     display_board(board)
   else
