@@ -67,5 +67,5 @@ def valid_move?(board, index)
 end
 
 def turn
-  
+  puts "Please enter a position, from 1-9"
 end
