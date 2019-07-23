@@ -57,3 +57,11 @@ def winner(board)
     nil
   end
 end
+
+def valid_move?(board, index)
+  if index.between?(0, 8) && board[index] == " "
+    true
+  else
+    false
+  end
+end
