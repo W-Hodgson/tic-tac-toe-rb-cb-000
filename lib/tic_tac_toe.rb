@@ -103,7 +103,6 @@ end
 
 def play(board)
   until over?(board)
-    puts "Make your move!"
     turn(board)
   end
 end
