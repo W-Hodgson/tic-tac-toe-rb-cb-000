@@ -71,7 +71,11 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, index, 'X')
+    if current_player(board) == 'X'
+      move(board, index, 'X')
+    else
+      move(board, indec, 'O')
+    end
     display_board(board)
   else
     turn(board)
@@ -98,5 +102,7 @@ def current_player(board)
 end
 
 def play(board, input)
-
+  until won?(board)
+    turn(board)
+  end
 end
