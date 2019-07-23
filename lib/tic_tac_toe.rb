@@ -67,7 +67,7 @@ def valid_move?(board, index)
 end
 
 def turn(board)
-  puts "Please enter a position, from 1-9"
+  puts "Enter a position, from 1-9"
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
@@ -102,8 +102,8 @@ def current_player(board)
 end
 
 def play(board, input)
-  puts "Welcome to tic, tac, toe! (noughts and crosses)"
   until won?(board)
+    puts "Make your move!"
     turn(board)
   end
 end
